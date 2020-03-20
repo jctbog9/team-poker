@@ -1,5 +1,23 @@
 {
   "name": "poker_bro",
   "private": true,
-  "dependencies": {}
+  "author": {
+    "name": "John trocchi"
+  },
+  "description": "An app built for playing a stylish game of poker with your friends",
+  "scripts": {
+    "start": "./bin/webpack-dev-server"
+  },
+  "dependencies": {
+    "@babel/preset-react": "^7.8.3",
+    "@rails/webpacker": "4.2.2",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "redbox-react": "^1.6.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.10.3"
+  }
 }

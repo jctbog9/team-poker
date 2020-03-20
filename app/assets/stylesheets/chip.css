@@ -1,0 +1,27 @@
+.chip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  border: 5px dashed #F7F1E1;
+  border-radius: 50px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+  margin: 20px 0px 0px 20px;
+}
+
+.red {
+  background-color: #9C1D1F;
+}
+.blue {
+  background-color: #154CBD;
+}
+.green {
+  background-color: #018E4A;
+}
+.white {
+  border: 5px dashed #312E71;
+  background-color: white;
+}

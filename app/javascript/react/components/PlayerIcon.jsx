@@ -1,8 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-function PlayerIcon({ isFull }) {
+function PlayerIcon() {
+  const [isFull, setIsFull] = useState(false)
+  const handleEmptyClick = () => {
+    setIsFull(true)
+  }
   return(
-    <div className={isFull ? "full-container" : "empty-container"}>
+    <div>
+      { 
+      isFull ? (
+          <div className="full-container">
+          </div>
+        ) : (
+          <div className="empty-container" onClick={handleEmptyClick}>
+            <i class="fas fa-plus fa-3x"></i>
+          </div>
+        )
+      }
     </div>
   )
 }

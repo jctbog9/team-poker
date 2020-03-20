@@ -7,27 +7,17 @@ const App = (props) => {
     <div>
       <div className="table-row">
         <PlayerIcon />
-        <PlayerIcon 
-          isFull={true}
-        />
+        <PlayerIcon />
         <PlayerIcon />
       </div>
       <div className="table-row mid-row">
-        <PlayerIcon 
-          isFull={true}
-        />
+        <PlayerIcon />
         <PlayerIcon />
       </div>
       <div className="table-row">
-        <PlayerIcon 
-          isFull={true}
-        />
-        <PlayerIcon 
-          isFull={true}
-        />
-        <PlayerIcon 
-          isFull={true}
-        />
+        <PlayerIcon />
+        <PlayerIcon />
+        <PlayerIcon />
       </div>
     </div>
   )

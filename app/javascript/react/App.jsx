@@ -1,25 +1,16 @@
 import React from 'react'
+import { Router, Route } from 'react-router';
+import history from './history';
 
-import PlayerIcon from './components/PlayerIcon';
+import SigninForm from './containers/SigninForm';
+import PokerBoard from './containers/PokerBoard';
 
 const App = (props) => {
   return (
-    <div>
-      <div className="table-row">
-        <PlayerIcon />
-        <PlayerIcon />
-        <PlayerIcon />
-      </div>
-      <div className="table-row mid-row">
-        <PlayerIcon />
-        <PlayerIcon />
-      </div>
-      <div className="table-row">
-        <PlayerIcon />
-        <PlayerIcon />
-        <PlayerIcon />
-      </div>
-    </div>
+    <Router history={history}>
+      <Route exact path='/' component={SigninForm} />
+      <Route exact path='/room/:id' component={PokerBoard} />
+    </Router>
   )
 }
 

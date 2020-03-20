@@ -1,10 +1,34 @@
 import React from 'react'
 
-import Chip from './components/Chip';
+import PlayerIcon from './components/PlayerIcon';
 
 const App = (props) => {
   return (
-    <div>    
+    <div>
+      <div className="table-row">
+        <PlayerIcon />
+        <PlayerIcon 
+          isFull={true}
+        />
+        <PlayerIcon />
+      </div>
+      <div className="table-row mid-row">
+        <PlayerIcon 
+          isFull={true}
+        />
+        <PlayerIcon />
+      </div>
+      <div className="table-row">
+        <PlayerIcon 
+          isFull={true}
+        />
+        <PlayerIcon 
+          isFull={true}
+        />
+        <PlayerIcon 
+          isFull={true}
+        />
+      </div>
     </div>
   )
 }
